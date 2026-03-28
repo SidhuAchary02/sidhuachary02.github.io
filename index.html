@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Sidhu Achary</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            line-height: 1.6;
+            color: #000;
+            background-color: #fff;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            gap: 12px;
+            justify-content: left;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #000;
+            font-size: 16px;
+            font-family: Georgia, serif;
+            position: relative;
+        }
+
+        nav a.active {
+            border-bottom: 2px solid #000;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            opacity: 0.6;
+        }
+
+        /* Main Content */
+        h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            font-family: Georgia, serif;
+        }
+
+        h2 {
+            font-size: 32px;
+            font-weight: bold;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-family: Georgia, serif;
+        }
+
+        /* Profile Image */
+        .profile-image {
+            margin: 10px 0;
+        }
+
+        .profile-image img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Paragraphs */
+        p {
+            margin-bottom: 20px;
+            font-size: 19px;
+            /* line-height: 1.8; */
+            text-align: left;
+        }
+
+        /* Links */
+        a {
+            color: #000;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        a:hover {
+            opacity: 0.6;
+        }
+
+        /* Subtitle */
+        .subtitle {
+            font-size: 16px;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+
+        /* Footer */
+        footer {
+            text-align: right;
+            margin-top: 80px;
+            padding-top: 30px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 36px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            nav {
+                gap: 15px;
+                font-size: 14px;
+            }
+
+            body {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav>
+            <a href="#about" class="active">about</a>
+            <a href="#now">now</a>
+            <a href="#articles">articles</a>
+            <a href="#reading">reading</a>
+            <a href="#elsewhere">elsewhere</a>
+        </nav>
+
+        <!-- Main Heading -->
+        <h2>Hi there!</h2>
+
+        <!-- Profile Image -->
+        <div class="profile-image">
+            <img src="assets/Profile.jpg" width="130px" alt="Profile photo">
+        </div>
+
+        <!-- Bio Content -->
+        <p>I'm a software consultant who cares about building software that is reliable, readable and maintainable. I'm also interested in teaching software development and helping people achieve high levels of personal productivity.</p>
+
+        <p>I'm currently building <a href="#">CodeCrafters</a>, a site for advanced programming challenges based on <a href="#">"Build Your Own X"</a> tutorials.</p>
+
+        <p>In the past, I've worked full-time at <a href="#">Kayako</a>, <a href="#">Doist</a> (makers of <a href="#">Todoist</a> & <a href="#">Twist</a>) and <a href="#">Shutl</a> (India's Uber for buses). I've also worked as a consultant for multiple companies including <a href="#">Segment</a>, <a href="#">Clerky</a>, <a href="#">Interview Cake</a> and Jumpbox (defunct).</p>
+
+        <p>Husband to <a href="#">this wonderful lady</a> and petfather to <a href="#">this sneaky cat</a>.</p>
+
+        <!-- Footer -->
+        <footer>
+            Last updated on May 2nd, 2021
+        </footer>
+    </div>
+</body>
+</html>
