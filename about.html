@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What i am doing now | Sidhu Achary</title>
+    <title>About me | Sidhu Achary</title>
     <style>
         * {
             margin: 0;
@@ -64,6 +64,7 @@
             margin-top: 30px;
             font-family: Georgia, serif;
         }
+
         /* p {
             margin-bottom: 20px;
             font-size: 19px;
@@ -80,19 +81,43 @@
         a:hover {
             opacity: 0.6;
         }
+        .now{
+            margin-top: 20px;
+        }
 
-        .now p{
+        .now p {
             opacity: 0.5;
             font-size: small;
         }
 
-        .now span{
+        .now span {
             display: block;
             margin-top: 5px;
             font-size: smaller;
             color: #555;
         }
 
+        .timeline {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .timeline li {
+            position: relative;
+            padding-left: 18px;
+            margin: 6px 0;
+        }
+
+        .timeline li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 11px;
+            width: 6px;
+            height: 6px;
+            background-color: #000;
+            border-radius: 50%;
+        }
 
         /* Responsive */
         @media (max-width: 600px) {
@@ -123,14 +148,23 @@
             <a href="index.html">home</a>
             <a href="about.html" class="active">about</a>
             <a href="projects.html">projects</a>
-            <a href="learning.html">learning</a>
+            <a href="now.html">now</a>
             <a href="elsewhere.html">elsewhere</a>
         </nav>
 
         <div class="now">
-            <h3>What I'm doing now</h3>
-            <p>(This is a <a href="https://nownownow.com/about" target="_blank" rel="noopener noreferrer">now page</a>, and if you have your own site, you should make one, too.)</p>
             <span>Updated on March 28th, 2026</span>
+            <h2>Timeline for context:</h2>
+            <ul class="timeline">
+                <li><strong>2005:</strong> born in brahmapur</li>
+                <li><strong>2005:</strong> moved to mumbai</li>
+                <li><strong>2020:</strong> passed out of school</li>
+                <li><strong>2021:</strong> Started coding (first exposure to programming)</li>
+                <li><strong>2022:</strong> Built my first website</li>
+                <li><strong>2023:</strong> Build & shipped a freelance website</li>
+                <li><strong>2024:</strong> first internship as a full stack developer</li>
+                
+            </ul>
         </div>
     </div>
 </body>
