@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Sidhu Achary</title>
+    <title>Sidhu Achary</title>
     <style>
         * {
             margin: 0;
@@ -17,6 +18,29 @@
             color: #000;
             background-color: #fff;
             padding: 40px 20px;
+        }
+
+        .heading {
+            display: flex;
+            gap: 40px;
+            padding: 20px 0px;
+        }
+
+        .heading div a {
+            text-decoration: underline;
+            font-size: 34px;
+        }
+
+        .me10 {
+            margin: 10px 0;
+        }
+
+        .me10 p {
+            line-height: 1.9;
+        }
+
+        .me10min {
+            margin: 20px 0;
         }
 
         .container {
@@ -76,13 +100,11 @@
             display: block;
         }
 
-        /* Paragraphs */
-        p {
+        /* p {
             margin-bottom: 20px;
             font-size: 19px;
-            /* line-height: 1.8; */
             text-align: left;
-        }
+        } */
 
         /* Links */
         a {
@@ -133,38 +155,65 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <!-- Navigation -->
         <nav>
-            <a href="#about" class="active">about</a>
-            <a href="#now">now</a>
-            <a href="#articles">articles</a>
-            <a href="#reading">reading</a>
-            <a href="#elsewhere">elsewhere</a>
+            <a href="index.html" class="active">about</a>
+            <a href="projects.html">projects</a>
+            <a href="now.html">now</a>
+            <a href="learning.html">learning</a>
+            <a href="elsewhere.html">elsewhere</a>
         </nav>
 
-        <!-- Main Heading -->
-        <h2>Hi there!</h2>
-
-        <!-- Profile Image -->
-        <div class="profile-image">
-            <img src="assets/Profile.jpg" width="130px" alt="Profile photo">
+        <div class="heading">
+            <!-- Profile Image -->
+            <div class="profile-image">
+                <img src="assets/Profile.jpg" width="130px" alt="Profile photo">
+            </div>
+            <div>
+                <!-- Main Heading -->
+                <a href="/">Sidhu Achary</a>
+                <audio controls>
+                    <source src="assets/name-audio.mp3" type="audio/ogg">
+                    Sidhu Achary
+                </audio>
+            </div>
         </div>
 
-        <!-- Bio Content -->
-        <p>I'm a software consultant who cares about building software that is reliable, readable and maintainable. I'm also interested in teaching software development and helping people achieve high levels of personal productivity.</p>
+        <div class="me10">
+            <h3>me in 10 seconds?</h3>
+            <p>I'm a <a href="/developer">software developer</a>, always building stuffs...</p>
+            <p>I'm a <a href="/slow">slow thinker</a>, learning LLD and love to play & watch cricket</p>
+            <p>I live in mumbai</p>
+        </div>
+        <div class="me10min">
+            <h3>me in 10 minutes?</h3>
+            <!-- Bio Content -->
+            <p>I'm a software Developer who cares about building software that is reliable, readable and maintainable.
+                I'm
+                also interested in electronic software development and helping people achieve high levels of personal
+                productivity.</p>
 
-        <p>I'm currently building <a href="#">CodeCrafters</a>, a site for advanced programming challenges based on <a href="#">"Build Your Own X"</a> tutorials.</p>
+            <p>I'm currently building <a href="#">CodeCrafters</a>, a site for advanced programming challenges based on
+                <a href="#">"Build Your Own X"</a> tutorials.
+            </p>
 
-        <p>In the past, I've worked full-time at <a href="#">Kayako</a>, <a href="#">Doist</a> (makers of <a href="#">Todoist</a> & <a href="#">Twist</a>) and <a href="#">Shutl</a> (India's Uber for buses). I've also worked as a consultant for multiple companies including <a href="#">Segment</a>, <a href="#">Clerky</a>, <a href="#">Interview Cake</a> and Jumpbox (defunct).</p>
+            <p>In the past, I've worked full-time at <a href="#">Kayako</a>, <a href="#">Doist</a> (makers of <a
+                    href="#">Todoist</a> & <a href="#">Twist</a>) and <a href="#">Shutl</a> (India's Uber for buses).
+                I've
+                also worked as a consultant for multiple companies including <a href="#">Segment</a>, <a
+                    href="#">Clerky</a>, <a href="#">Interview Cake</a> and Jumpbox (defunct).</p>
 
-        <p>Husband to <a href="#">this wonderful lady</a> and petfather to <a href="#">this sneaky cat</a>.</p>
+        </div>
+
 
         <!-- Footer -->
         <footer>
-            Last updated on May 2nd, 2021
+            Last updated on March 28th, 2026
         </footer>
     </div>
 </body>
+
 </html>

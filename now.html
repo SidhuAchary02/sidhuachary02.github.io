@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What i am doing now | Sidhu Achary</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            line-height: 1.6;
+            color: #000;
+            background-color: #fff;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            gap: 12px;
+            justify-content: left;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #000;
+            font-size: 16px;
+            font-family: Georgia, serif;
+            position: relative;
+        }
+
+        nav .active {
+            border-bottom: 2px solid #000;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            opacity: 0.6;
+        }
+
+        /* Main Content */
+        h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            font-family: Georgia, serif;
+        }
+
+        h3 {
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 30px;
+            font-family: Georgia, serif;
+        }
+        /* p {
+            margin-bottom: 20px;
+            font-size: 19px;
+            text-align: left;
+        } */
+
+        /* Links */
+        a {
+            color: #000;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        a:hover {
+            opacity: 0.6;
+        }
+
+        .now p{
+            opacity: 0.5;
+            font-size: small;
+        }
+
+        .now span{
+            display: block;
+            margin-top: 5px;
+            font-size: smaller;
+            color: #555;
+        }
+
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 36px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            nav {
+                gap: 15px;
+                font-size: 14px;
+            }
+
+            body {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav>
+            <a href="index.html">about</a>
+            <a href="projects.html">projects</a>
+            <a href="now.html" class="active">now</a>
+            <a href="learning.html">learning</a>
+            <a href="elsewhere.html">elsewhere</a>
+        </nav>
+
+        <div class="now">
+            <h3>What I'm doing now</h3>
+            <p>(This is a <a href="https://nownownow.com/about" target="_blank" rel="noopener noreferrer">now page</a>, and if you have your own site, you should make one, too.)</p>
+            <span>Updated on March 28th, 2026</span>
+        </div>
+    </div>
+</body>
+
+</html>
