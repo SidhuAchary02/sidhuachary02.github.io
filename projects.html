@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What i am doing now | Sidhu Achary</title>
+    <title>projects | Sidhu Achary</title>
     <style>
         * {
             margin: 0;
@@ -58,12 +58,6 @@
             font-family: Georgia, serif;
         }
 
-        h3 {
-            font-size: 22px;
-            font-weight: bold;
-            margin-top: 30px;
-            font-family: Georgia, serif;
-        }
         /* p {
             margin-bottom: 20px;
             font-size: 19px;
@@ -81,18 +75,66 @@
             opacity: 0.6;
         }
 
-        .now p{
-            opacity: 0.5;
-            font-size: small;
+        .projects {
+            max-width: 700px;
+            margin: auto;
         }
 
-        .now span{
-            display: block;
-            margin-top: 5px;
-            font-size: smaller;
-            color: #555;
+        .projects h2 {
+            margin-top: 30px;
+            font-size: 17px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
         }
 
+        .projects ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .projects li a {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        .projects li {
+            margin: 8px 0;
+            line-height: 1.5;
+        }
+
+        .projects strong {
+            font-weight: 600;
+            color: #000;
+        }
+
+        .projects li {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .projects img {
+            width: 16px;
+        }
+
+        .green-dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: #22c55e;
+            border-radius: 50%;
+        }
+
+        /* Footer */
+        footer {
+            text-align: right;
+            margin-top: 80px;
+            padding-top: 30px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 14px;
+            color: #666;
+        }
 
         /* Responsive */
         @media (max-width: 600px) {
@@ -120,18 +162,87 @@
     <div class="container">
         <!-- Navigation -->
         <nav>
-            <a href="index.html">about</a>
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
             <a href="projects.html" class="active">projects</a>
             <a href="now.html">now</a>
-            <a href="learning.html">learning</a>
             <a href="elsewhere.html">elsewhere</a>
         </nav>
+        <div class="projects">
 
-        <div class="now">
-            <h3>What I'm doing now</h3>
-            <p>(This is a <a href="https://nownownow.com/about" target="_blank" rel="noopener noreferrer">now page</a>, and if you have your own site, you should make one, too.)</p>
-            <span>Updated on March 28th, 2026</span>
+            <h2>Side Projects</h2>
+            <ul>
+                <li>
+                    <a href="https://advizy.in/" target="_blank">advizy</a> — Platform connecting people with expert
+                    mentors seamlessly.
+                    <a href="https://github.com/mentorix-team/Advizy" target="_blank"><img
+                            src="assets/icons8-github.svg" alt="GitHub"></a>
+                </li>
+                <li>
+                    <a href="https://nova-ai-pied.vercel.app/" target="_blank">nova ai</a> — AI-powered platform for
+                    creating educational courses.
+                    <a href="https://github.com/SidhuAchary02/nova-ai" target="_blank"><img
+                            src="assets/icons8-github.svg" alt="GitHub"></a>
+                </li>
+                <li>
+                    <a href="https://nova-ai-pied.vercel.app/" target="_blank">chatswithPDF</a> — An intelligent
+                    document assistant.
+                    <a href="https://github.com/SidhuAchary02/chatWithPDF" target="_blank"><img
+                            src="assets/icons8-github.svg" alt="GitHub"></a>
+                </li>
+                <li>
+                    <a href="https://quickpad-ruddy.vercel.app" target="_blank">quickpad</a> — A minimalist notepad for
+                    quick, secure, and anonymous note-taking.
+                    <a href="https://github.com/SidhuAchary02/quickpad" target="_blank"><img
+                            src="assets/icons8-github.svg" alt="GitHub"></a>
+                </li>
+                <li>
+                    <a href="https://github.com/SidhuAchary02/eyeQ" target="_blank">eyeQ</a> — AI CCTV Survillance
+                    system in real-time.
+                    <a href="https://github.com/SidhuAchary02/eyeQ" target="_blank"><img src="assets/icons8-github.svg"
+                            alt="GitHub"></a>
+                </li>
+            </ul>
+
+            <h2>Mini Projects — curiosity stuff</h2>
+            <ul>
+                <li>
+                    <a href="https://chromewebstore.google.com/detail/tabshare-share-tab-groups/ackkgbdepcbjjlbfidccojaodiikiold"
+                        target="_blank">tabshare</a><span class="green-dot"></span>(33 users) — Browser extension that
+                    lets you share a tab groups as link.
+                    <a href="https://sidhuachary02.github.io/tabshare-extension/" target="_blank"><img
+                            src="assets/icons8-github.svg" alt="GitHub"></a>
+                </li>
+                <li>
+                    <a href="https://www.npmjs.com/package/@sidhuachary/smartcommit" target="_blank">smartcommit</a> —
+                    AI-powered CLI tool that generates short Conventional Commits.
+                    <a href="https://github.com/SidhuAchary02/smartcommit" target="_blank"><img
+                            src="assets/icons8-github.svg" alt="GitHub"></a>
+                </li>
+                <li>
+                    <a href="https://t-stickers.vercel.app/" target="_blank">t-stickers</a> — A platform for creating,
+                    sharing, and discovering talking-stickers 😁.
+                    <a href="https://github.com/SidhuAchary02/t-stickers" target="_blank"><img
+                            src="assets/icons8-github.svg" alt="GitHub"></a>
+                </li>
+            </ul>
+<!-- 
+            <h2>publications</h2>
+            <ul>
+                <li>
+                    <a href="#"
+                        target="_blank">
+                        IEEE paper
+                    </a> — An Intelligent Personalized Course Generation System Using Generative Artificial Intelligence
+                </li>
+            </ul> -->
+
         </div>
+
+        <!-- Footer -->
+        <footer>
+            Last updated on March 29th, 2026
+        </footer>
     </div>
 </body>
 
